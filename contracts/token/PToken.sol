@@ -344,7 +344,7 @@ abstract contract PToken is IPToken, Exponential, TokenErrorReporter, OwnableUpg
             return (mathErr, 0);
         }
 
-        if (borrowSnapshot.interestIndex == 0) {
+        if (borrowSnapshot. == 0) {
             return (MathError.NO_ERROR, 0);
         }
         (mathErr, principalTimesIndex) = divUInt(interestTimesIndex, borrowSnapshot.interestIndex);
